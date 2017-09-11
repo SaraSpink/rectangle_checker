@@ -17,4 +17,4 @@ get('/output') do
     @string_to_display = "This is not a square."
   end
   erb(:output)
-end
+endr
