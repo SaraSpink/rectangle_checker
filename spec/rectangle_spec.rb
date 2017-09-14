@@ -2,8 +2,8 @@ require('rspec')
 require('rectangle')
 
 
-describe(Rectangle) do
-rectangle = Rectangle.new({:length=> 5, :width=> 7, :color=> "red", :line_width=> 3, :line_color=> "black", :line_type=> "dotted"})
+describe(Shape) do
+rectangle = Shape::Rectangle.new({:length=> 5, :width=> 7})
 
   describe("#square?") do
     it("returns false if it is not a square") do

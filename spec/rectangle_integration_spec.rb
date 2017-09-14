@@ -9,7 +9,6 @@ describe('the rectangle path', {:type => :feature}) do
     fill_in('length', :with => '5')
     fill_in('width', :with => '5')
     click_button('Go!')
-
     expect(page).to have_content('This is a square.')
   end
 end
