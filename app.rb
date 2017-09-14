@@ -10,7 +10,7 @@ end
 post('/output') do
   @length = params.fetch("length")
   @width = params.fetch("width")
-  rectangle = Rectangle.new(@length, @width)
+  rectangle = Rectangle.new(:length, :width, :color, :line_width, :line_color)
   if rectangle.square?
     @string_to_display = "This is a square."
   else
